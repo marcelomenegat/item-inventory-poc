@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  user-select: none;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  touch-action: manipulation;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.game-tabs {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.game-container--dragging {
+  * {
+    cursor: grabbing !important;
+  }
+}
+
+#game-container {
+  height: 100%;
+
+  .game-main-ui {
+    height: 100%;
+    display: flex;
+    border: 2px solid red;
+
+    h6 {
+      padding: 3px;
+      margin: 0;
+      background-color: #e3e3e3;
+    }
+
+    main {
+      flex: 1;
+      background-color: black;
+      display: flex;
+      justify-content: flex-end;
+
+      div {
+        width: 40px;
+        height: 40px;
+        background-color: #e3e3e3;
+        cursor: pointer;
+        margin: 10px;
+      }
+    }
+
+    section {
+      width: 205px;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .equipments {
+      height: 250px;
+      background-color: gray;
+
+      &__slot {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        font-size: 8px;
+        background-color: #e3e3e3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    .containers {
+      height: 100%;
+      display: flex;
+      background-color: darkgrey;
+      row-gap: 10px;
+      flex-direction: column;
+
+      &__container {
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid black;
+        height: fit-content;
+      }
+
+      &__space {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+        font-size: 8px;
+      }
+    }
+  }
+
+  .bg-armor_01 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -10px -10px;
+  }
+
+  .bg-armor_02 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -62px -10px;
+  }
+
+  .bg-bag_01 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -10px -62px;
+  }
+
+  .bg-bag_02 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -62px -62px;
+  }
+
+  .bg-boots_01 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -114px -10px;
+  }
+
+  .bg-boots_02 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -114px -62px;
+  }
+
+  .bg-container_01 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -10px -114px;
+  }
+
+  .bg-dagger_01 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -62px -114px;
+  }
+
+  .bg-food_01 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -114px -114px;
+  }
+
+  .bg-food_02 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -166px -10px;
+  }
+
+  .bg-head_01 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -166px -62px;
+  }
+
+  .bg-head_02 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -166px -114px;
+  }
+
+  .bg-legs_01 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -10px -166px;
+  }
+
+  .bg-legs_02 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -62px -166px;
+  }
+
+  .bg-life_potion {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -114px -166px;
+  }
+
+  .bg-mana_potion {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -166px -166px;
+  }
+
+  .bg-rope {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -218px -10px;
+  }
+
+  .bg-shield_01 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -218px -62px;
+  }
+
+  .bg-shield_02 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -218px -114px;
+  }
+
+  .bg-shovel {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -218px -166px;
+  }
+
+  .bg-sword_01 {
+    width: 32px;
+    height: 32px;
+    background: url('https://i.ibb.co/SJn0BTd/sprites.png') -10px -218px;
+  }
+}
