@@ -33,7 +33,7 @@ export const GameContainer = ({ characterId }: IGameContainerProps) => {
       ) {
         return;
       }
-
+      // teste
       // const { containerId, itemInstanceId, slot } = message.payload;
       socketConnection.current?.dispatch({
         event: "move-item",
